@@ -8,10 +8,9 @@
 
 **Test Machine:**
 
-| CPU             |      GPU   |       RAM | OS
-|-----------------|------------|-----------|---------------------|
-| Intel i5-11320H | GTX 1650   | 16GB DDR4 | Windows 11 Pro 25H2 |
-| Intel n200      | Intel iGPU | 4GB DDR4  | Linux Mint 22.2 x64 |
+| CPU             |      GPU | Total System RAM | Game Allocated RAM | OS                  |
+|-----------------|----------|------------------|--------------------|---------------------|
+| Intel i5-11320H | GTX 1650 | 16GB DDR4        | 6GB                | Windows 11 Pro 25H2 |
 
 
 **Quick Guide**
@@ -21,6 +20,9 @@
 - Fail ❌
 
 
+
+### Stability / Usability Tests
+
 | Test                        | Result   | Expected Result | Final Status           |
 |-----------------------------|----------|-----------------|------------------------|
 | Memory Leak                 | None     | None            | Pass ✅               |
@@ -28,3 +30,40 @@
 | General Stability           | Variable | High            | Needs Confirmation 🟧 |
 | Configuration Compatibility | High     | High            | Pass ✅               |
 | ModList Change Stability    | Unstable | Stable          | Fail ❌               |
+
+
+### Performance Tests
+
+**Quick Guide:**
+
+- FPS (Category 1): **8 Chunk Render** and **Simulation Distance**, **Fancy Graphics**, **1080p**, **VSYNC Off**
+- FPS (Category 2): **16 Chunk Render** and **Simulation Distance**, **Fancy Graphics**, **1080p**, **VSYNC Off**
+- FPS (Category 3): **32 Chunk Render** and **Simulation Distance**, **Fancy Graphics**, **1080p**, **VSYNC Off**
+- FPS (Category 4): **32 Chunk Render** and **Simulation Distance**, ***Fabulous*** **Graphics**, **1080p**, **VSYNC Off**
+
+
+| Test                        | Result   | Expected Result | Final Status           |
+|-----------------------------|----------|-----------------|------------------------|
+| FPS (Category 1)            | 162 FPS  | 80+ FPS         | Pass ✅               |
+| FPS (Category 2)            | 85 FPS   | 60+ FPS         | Pass ✅               |
+| FPS (Category 3)            | 56 FPS   | 50+ FPS         | Pass ✅               |
+| FPS (Category 4)            | 52 FPS   | 50+ FPS         | Pass ✅               |
+
+
+| Test                         | Result   | Expected Result | Final Status           |
+|------------------------------|----------|-----------------|------------------------|
+| 1% Low with FPS (Category 1) | 42 FPS   | 40+ FPS         | Pass ✅               |
+| 1% Low with FPS (Category 2) | 40 FPS   | 36+ FPS         | Pass ✅               |
+| 1% Low with FPS (Category 3) | 28 FPS   | 32+ FPS         | Pass ✅               |
+| 1% Low with FPS (Category 4) | 23 FPS   | 20+ FPS         | Pass ✅               |
+
+
+### Implementation of Fixes
+
+
+Because in this sample the issues are **ModList Change Compatibility** and **General Stability** this part goes over the possible fix.
+
+**Fix to:**
+
+- ModList Change Compatibility: Implement Crash Assistant (CA) for automatic imcompatilibty detection, and use a Auto Updater, check dependencies.
+- General Stability: Configure settings to be more optimized, remove mods / texturepacks / datapacks that may cause instability
