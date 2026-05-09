@@ -65,5 +65,5 @@ Because in this sample the issues are **ModList Change Compatibility** and **Gen
 
 **Fix to:**
 
-- ModList Change Compatibility: Implement Crash Assistant (CA) for automatic imcompatilibty detection, and use a Auto Updater, check dependencies.
+- ModList Change Compatibility: Implement Crash Assistant (CA) for automatic incompatibility detection, and use a Auto Updater, check dependencies.
 - General Stability: Configure settings to be more optimized, remove mods / texturepacks / datapacks that may cause instability
