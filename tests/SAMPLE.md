@@ -16,9 +16,9 @@
 
 **Quick Guide**
 
-Pass ✅
-Untested / Needs Confirmation 🟧
-Fail ❌
+- Pass ✅
+- Untested / Needs Confirmation 🟧
+- Fail ❌
 
 
 | Test                        | Result   | Expected Result | Final Status           |
