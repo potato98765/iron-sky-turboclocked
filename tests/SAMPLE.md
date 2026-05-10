@@ -5,6 +5,7 @@
 
 - **Modpack Version: v1.0**
 - **Game Version: 1.21.1**
+- **Seed: 95718582**
 
 **Test Machine:**
 
@@ -18,6 +19,7 @@
 - Pass ✅
 - Untested / Needs Confirmation 🟧
 - Fail ❌
+- Test cant be done because some issue (like a setting not being present in game) ❓
 
 
 
