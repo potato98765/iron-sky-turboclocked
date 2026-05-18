@@ -1,6 +1,6 @@
 **In this file you will find some information about the tests**
 
-### Types of Result for Test
+## Types of Result for Test
 
 - Pass ✅
 - Untested / Needs Confirmation 🟧
@@ -8,9 +8,9 @@
 - Test cant be done because some issue ❓
 
 
-### Types of Tests
+## Types of Tests
 
- ## Stability Tests
+### Stability Tests
 
 - Memory Leak
 - Long Session Stability
@@ -18,7 +18,7 @@
 - Configuration Stability (like tweaking many settings, and testing if its still stable)
 - ModList Change Stability (like changing the modlist by removing / adding mods, testing if still stable)
 
- ## Performance Tests
+### Performance Tests
 
  - FPS (Category 1-4)
  - 1% Low FPS (Category 1-4)
